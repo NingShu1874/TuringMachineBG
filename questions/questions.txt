@@ -1,0 +1,2 @@
+[Array[int]([21, 0]), Array[int]([23, 1]), Array[int]([25, 2])]
+[Array[int]([23, 1]), Array[int]([24, 2]), Array[int]([25, 0])]
