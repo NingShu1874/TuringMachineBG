@@ -4,7 +4,7 @@ extends RefCounted
 class_name Robot
 
 # 脚本数
-const ROBOT_COUNT = 48
+const ROBOT_COUNT = 22
 const ROBOT_OUTSET = 1
 # 脚本地址
 const ROBOT_PATH = "res://robots/robot%s.gd"
