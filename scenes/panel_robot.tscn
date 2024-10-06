@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://bndtroptkhknd"]
+
+[ext_resource type="Script" path="res://scripts/panel_robot.gd" id="1_moxdo"]
+[ext_resource type="Texture2D" uid="uid://pcbwotesi6py" path="res://icon.svg" id="2_iqp8v"]
+
+[node name="PanelRobot" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1420.0
+offset_bottom = -780.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_moxdo")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+vertical = true
+
+[node name="RobotDesc" type="PanelContainer" parent="MarginContainer/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BoxContainer/RobotDesc"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer"]
+layout_mode = 2
+
+[node name="Img_Robot" type="TextureRect" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_iqp8v")
+
+[node name="Txt_Robot" type="Label" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 2.0
+text = "答案中1的数量"
+vertical_alignment = 1
+
+[node name="RobotSets" type="MarginContainer" parent="MarginContainer/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3

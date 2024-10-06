@@ -20,7 +20,7 @@ func _ready() -> void:
 	#var all_q: = Question.all_question_set()
 	all_r = Robot.all_robot_set(all_a)
 	#all_q = Question.all_question_set(all_r, all_a)
-	all_q = Question.read_all_question_set(all_r, all_a)
+	#all_q = Question.read_all_question_set(all_r, all_a)
 	pass # Replace with function body.
 
 
