@@ -32,12 +32,12 @@ size_flags_vertical = 3
 [node name="BoxContainer" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer"]
 layout_mode = 2
 
-[node name="Img_Robot" type="TextureRect" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
+[node name="Img_RobotDesc" type="TextureRect" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("2_iqp8v")
 
-[node name="Txt_Robot" type="Label" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
+[node name="Txt_RobotDesc" type="Label" parent="MarginContainer/BoxContainer/RobotDesc/MarginContainer/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -48,3 +48,52 @@ vertical_alignment = 1
 [node name="RobotSets" type="MarginContainer" parent="MarginContainer/BoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotSets"]
+layout_mode = 2
+vertical = true
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotSets/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/BoxContainer/RobotSets/BoxContainer"]
+layout_mode = 2
+
+[node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotSets/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/BoxContainer/RobotSets/BoxContainer"]
+layout_mode = 2
+
+[node name="BoxContainer3" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotSets/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="BoxContainer" parent="MarginContainer/BoxContainer/RobotSets"]
+visible = false
+layout_mode = 2
+
+[node name="Img_RobotDesc" type="TextureRect" parent="MarginContainer/BoxContainer/RobotSets/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_iqp8v")
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/BoxContainer/RobotSets/GridContainer"]
+layout_mode = 2
+
+[node name="Img_RobotDesc2" type="TextureRect" parent="MarginContainer/BoxContainer/RobotSets/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_iqp8v")
+
+[node name="Img_RobotDesc3" type="TextureRect" parent="MarginContainer/BoxContainer/RobotSets/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_iqp8v")
+
+[node name="Img_RobotDesc4" type="TextureRect" parent="MarginContainer/BoxContainer/RobotSets/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_iqp8v")
